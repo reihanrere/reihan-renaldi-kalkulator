@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-key {
+    @apply w-20 h-20 md:w-24 md:h-24 font-bold text-lg md:text-2xl rounded-full flex justify-center items-center dark:text-white dark:bg-[#666666] shadow-[0px_2px_6px_5px_rgba(0,_0,_0,_0.1)] dark:shadow-[0px_2px_6px_5px_rgba(0,_0,_0,_0.5)];
+}
+
+.btn-key:active {
+    @apply dark:text-white dark:bg-[#666666] shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)] dark:shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.5)];
+    transform: scale(0.95);
+    transition: transform .1ms;
+}
+
+.form-input {
+    @apply w-full h-16 text-lg text-black dark:text-white rounded-lg px-4;
+}
+
+input:focus {
+    @apply border-none;
+}
